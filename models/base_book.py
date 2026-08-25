@@ -26,4 +26,4 @@ class Book:
     # 도서 정보 출력 함수
     def get_info(self):
         status = "대여중" if self.__is_borrowed else "대여 가능"
-        return f"제목: {self.title} | 저자: {self.author} | ISBN: {self.isbn} | 상태: {status}"
+        return f"제목: {self.title} | 저자: {self.author} | ISBN: {self.isbn} | 상태: {status} | 크기: {self.file_size}"

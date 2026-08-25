@@ -9,7 +9,7 @@ class EBook(Book):
     # 출력 형태 전자책에 맞게 오버라이딩
     def get_info(self):
         status = "대여중" if self.is_borrowed() else "대여 가능"
-        return f"[전자도서] 제목: {self.title} | 저자: {self.author} | ISBN: {self.isbn} | 상태: {status} | 사이즈: {file_size}"
+        return f"[전자도서] 제목: {self.title} | 저자: {self.author} | ISBN: {self.isbn} | 상태: {status} | 사이즈: {self.file_size}"
 
 
 class PaperBook(Book):
